@@ -8,16 +8,16 @@
 # 1. Project Overview
 
 ## Project Title
-[Write your project title here]
+Tournament management system
 
 ## Project Description
-[Briefly explain what the project is about]
+The project will be a app which help to manage events which will be added, manage participants in teams and individuals as well + calculate score for all of participants and create leaderbord.
 
 ## Start Date
-[Unknown / add later]
+[31.03.2026]
 
 ## Target End Date
-[Unknown / add later]
+[20.04.2026]
 
 ## File list.
 
@@ -27,33 +27,37 @@
 
 # 2. Progress Log
 
-> Add a new session at the top each time you work.
-
----
-## Session [01]
+Template:
+## Session [x]
 **Date:** [Add date later]  
 **Time spent:** [e.g. 45 min / 2 hours]  
 **Focus:** [What did you work on?]
 
+---
+## Session [01]
+**Date:** [31.03.2026]  
+**Time spent:** [50 min]  
+**Focus:** [I did upload Json file to a code, as well added all functions which should be there. I made a UI screen.]
+---
+
+
 ### Problems / Challenges
-- 
-- 
+- 1. When code started it ended after a few seconds 
+- 2. TKInter not founded
 
 ### Solutions / Actions Taken
-- 
-- 
+- 3. Add mainloop
+- 4. Change version of python
 
 ### Evidence
-- [Added code]
-- [Updated design]
-- [Created sketch]
-- [Researched source]
-- [Uploaded image/screenshot]
+- Added code
+- Created TK inter screen
+- 
+- 
+- 
 
 ### Reflection
-- What went well?
-- What needs improvement?
-- What did I learn?
+- I think That good start so now I have to fill in functions and then create TK inter interface and connect it to functions.
 
 ---
 
