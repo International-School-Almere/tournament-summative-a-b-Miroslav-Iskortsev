@@ -30,6 +30,17 @@ class TournamentApp:
         self.label_leaderboard = tk.Label(self.root, text="Participants", font=("Arial", 16))
         self.label_leaderboard.pack(pady=10)
     
+        # Navigation bar
+        self.nav_bar = tk.Frame(self.root)
+        self.nav_bar.pack(side="top", pady=20)
+        #buttons themself in nav bar
+        self.btn_event = tk.Button(self.nav_bar, text="Event", width=15, font=("Arial", 20))
+        self.btn_participants = tk.Button(self.nav_bar, text="Participants", width=15, font=("Arial", 20))
+        self.btn_overview = tk.Button(self.nav_bar, text="Overview", width=15, font=("Arial", 20))
+        #packaging buttons in nav bar
+        self.btn_event.pack(side="left", padx=10)
+        self.btn_participants.pack(side="left", padx=10)
+        self.btn_overview.pack(side="left", padx=10)
 
 # def show_participants_screen():
 
