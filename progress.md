@@ -62,9 +62,9 @@ Template:
 ---
 
 ## Session [02]
-**Date:** [Add date later]  
-**Time spent:** [e.g. 45 min / 2 hours]  
-**Focus:** [What did you work on?]
+**Date:** [07.04.2026]  
+**Time spent:** [40 min]  
+**Focus:** [I started make UI interface in TK Inter for app, now already created nvigation bar, so I still need to create all other staff for  pages, lines, tables, infromation layout and so on. As well I considering using classes that will help make my code more organaised and add to it maintainability.]
 
 ### Problems / Challenges
 - 
@@ -77,17 +77,17 @@ Template:
 ### Evidence
 - [Added code]
 - [Updated design]
-- [Created sketch]
-- [Researched source]
-- [Uploaded image/screenshot]
+- 
+- 
+- 
 
 ### Reflection
-- What went well?
-- What needs improvement?
-- What did I learn?
+- What went well? I added nav bar, it's not functional but it's already there
+- What needs improvement? Finish UI intarface for all pages
+- What did I learn? Just get a bit more understanding about classes
 
 ---
-## Session [02]
+## Session [03]
 **Date:** [Add date later]  
 **Time spent:** [e.g. 45 min / 2 hours]  
 **Focus:** [What did you work on?]
