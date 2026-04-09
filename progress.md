@@ -88,29 +88,29 @@ Template:
 
 ---
 ## Session [03]
-**Date:** [Add date later]  
-**Time spent:** [e.g. 45 min / 2 hours]  
-**Focus:** [What did you work on?]
+**Date:** [09.04.2026]  
+**Time spent:** [35 min]  
+**Focus:** [Creating TK Inter UI for leaderbord and upcoming events]
 
 ### Problems / Challenges
-- 
+- The leaderbord and upcoming events UI doesn't work.
 - 
 
 ### Solutions / Actions Taken
-- 
+- Not yet
 - 
 
 ### Evidence
 - [Added code]
-- [Updated design]
-- [Created sketch]
-- [Researched source]
-- [Uploaded image/screenshot]
+- [Updated design in code]
+- 
+- 
+- 
 
 ### Reflection
-- What went well?
-- What needs improvement?
-- What did I learn?
+- What went well? Everything, I almost finished UI for first page, but it doesn't work.
+- What needs improvement? Fix the workability of UI
+- What did I learn? Sticky, maybe I know it before but on the moment of coding I didn't remember it.
 
 ---
 
@@ -119,7 +119,7 @@ Template:
 
 | Problem | Cause | Fix | Status |
 |---|---|---|---|
-| [Describe issue] | [Why it happened] | [What you did] | Open / Fixed |
+| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | - | Open |
 | [Describe issue] | [Why it happened] | [What you did] | Open / Fixed |
 
 ---
