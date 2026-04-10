@@ -24,9 +24,7 @@ class TournamentApp:
         self.root = root
         self.root.title("Tournament Management System")
         self.root.geometry("800x870")
-    def main_screen(self):    
-        self.root.mainloop()
-    def show_participants_screen(self):
+
         self.label_leaderboard = tk.Label(self.root, text="Participants", font=("Arial", 16))
         self.label_leaderboard.pack(pady=10)
     
@@ -36,21 +34,31 @@ class TournamentApp:
         #buttons themself in nav bar
         self.btn_event = tk.Button(self.nav_bar, text="Event", width=15, font=("Arial", 20))
         self.btn_participants = tk.Button(self.nav_bar, text="Participants", width=15, font=("Arial", 20))
-        self.btn_overview = tk.Button(self.nav_bar, text="Overview", width=15, font=("Arial", 20))
+        self.btn_overview = tk.Button(self.nav_bar, text="Overview",command=self.show_overview_screen, width=15, font=("Arial", 20))
         #packaging buttons in nav bar
         self.btn_event.pack(side="left", padx=10)
         self.btn_participants.pack(side="left", padx=10)
         self.btn_overview.pack(side="left", padx=10)
+        
+        self.main=tk.Frame(self.root)
+        self.main.pack(fill="both", expand=True)
+        self.main.config(bg="#f0f0f0", padx=20, pady=20)
+
+    def main_loop(self):    
+        self.root.mainloop()
 
 
 
-    def show_leaderboard_screen(self, root):
+    def show_overview_screen(self):
+        self.main.destroy()
+        self.main = tk.Frame(self.root)
+        self.main.pack(fill="both", expand=True)
         #title
-        self.title_label = tk.Label(self.root, text="Top Rankings", font=("Arial", 20, "bold"))
+        self.title_label = tk.Label(self.main, text="Top Rankings", font=("Arial", 20, "bold"))
         self.title_label.pack(pady=20)
 
         #Box for tables
-        self.tables_container = tk.Frame(self.root)
+        self.tables_container = tk.Frame(self.main)
         self.tables_container.pack(fill="both", expand=True)
 
         #team ranking
@@ -76,16 +84,17 @@ class TournamentApp:
         self.label_indiv_name.grid(row=0, column=1,padx=10)
         self.label_indiv_score = tk.Label(self.indiv_rank_frame, text="Score", font=("Arial", 10, "bold"))
         self.label_indiv_score.grid(row=0, column=2)
+        show_events_screen(self)
 
-        # UPCOMING EVENTS SCREEN
+        #UPCOMING EVENTS SCREEN
 def show_events_screen(self):
         
         #title
-        self.title_label = tk.Label(self.main_content, text="UPCOMING EVENTS", font=("Arial", 18, "bold"))
+        self.title_label = tk.Label(self.main, text="UPCOMING EVENTS", font=("Arial", 18, "bold"))
         self.title_label.pack(pady=20)
 
         #box for events
-        self.events_frame = tk.Frame(self.main_content)
+        self.events_frame = tk.Frame(self.main)
         self.events_frame.pack(fill="x", padx=50)
 
         #ev1
@@ -150,9 +159,6 @@ def confirm_action(message):
     return messagebox.askyesno("Confirmation", message)
 
 
-
-
-TournamentApp(root)
-
-TournamentApp(root).show_participants_screen()
-TournamentApp(root).main_screen()
+app = TournamentApp(root)
+#app.show_overview_screen()
+app.main_loop()

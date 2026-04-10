@@ -119,7 +119,7 @@ Template:
 
 | Problem | Cause | Fix | Status |
 |---|---|---|---|
-| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | - | Open |
+| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | - | Fixed |
 | [Describe issue] | [Why it happened] | [What you did] | Open / Fixed |
 
 ---
