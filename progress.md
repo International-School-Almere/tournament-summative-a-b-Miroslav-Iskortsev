@@ -113,14 +113,38 @@ Template:
 - What did I learn? Sticky, maybe I know it before but on the moment of coding I didn't remember it.
 
 ---
+## Session [04]
+**Date:** [14.04.2026]  
+**Time spent:** [110 min]  
+**Focus:** [I almost finish the UI design, now all pages are working well, but some where itnee some details such as type of event on overview page and so on, as well delte function not finsished yes, and participants page now only have, without functionality inside, so it have to be added. Also I decide to use canvas in k inter instead of regular frame becuase for 1 of the page I need scroll function and regular frame not allow me to do it or atleas I didn't find how to do it, so I decide use canvas]
 
+### Problems / Challenges
+- Versions bugs
+- Canvas problems
+
+### Solutions / Actions Taken
+- Change vers.
+- Ask AI how to solve errors
+
+### Evidence
+- [Added code]
+- [Updated design]
+- 
+- 
+- 
+
+### Reflection
+- What went well? Everything, I finished 90% of all UI, and now I can start write algorithms and then connect them to UI
+- What needs improvement? Detail in UI and functionality in participants page
+- What did I learn? How to use canvas and add scrollbar, it orientation.
+---
 
 # 7. Problems and Fixes
 
 | Problem | Cause | Fix | Status |
 |---|---|---|---|
 | UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | - | Fixed |
-| [Describe issue] | [Why it happened] | [What you did] | Open / Fixed |
+| No scrollbar function in TK Inter frame | Scrollbar are not provided for this part of bibliotek | Switch from tk.frame to tk.canvas for events page | Fixed |
 
 ---
 
