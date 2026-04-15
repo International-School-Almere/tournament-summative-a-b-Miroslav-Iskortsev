@@ -110,7 +110,7 @@ Template:
 ### Reflection
 - What went well? Everything, I almost finished UI for first page, but it doesn't work.
 - What needs improvement? Fix the workability of UI
-- What did I learn? Sticky, maybe I know it before but on the moment of coding I didn't remember it.
+- What did I learn? Sticky, maybe I know it before but on the moment of coding I didn't remember it. Canvas and adding scroll bar through.
 
 ---
 ## Session [04]
@@ -119,8 +119,8 @@ Template:
 **Focus:** [I almost finish the UI design, now all pages are working well, but some where itnee some details such as type of event on overview page and so on, as well delte function not finsished yes, and participants page now only have, without functionality inside, so it have to be added. Also I decide to use canvas in k inter instead of regular frame becuase for 1 of the page I need scroll function and regular frame not allow me to do it or atleas I didn't find how to do it, so I decide use canvas]
 
 ### Problems / Challenges
-- Versions bugs
-- Canvas problems
+- 
+- 
 
 ### Solutions / Actions Taken
 - Change vers.
@@ -137,6 +137,31 @@ Template:
 - What went well? Everything, I finished 90% of all UI, and now I can start write algorithms and then connect them to UI
 - What needs improvement? Detail in UI and functionality in participants page
 - What did I learn? How to use canvas and add scrollbar, it orientation.
+---
+## Session [05]
+**Date:** [15.04.2026]  
+**Time spent:** [60 min]  
+**Focus:** [I did functionality for participants page as well adding points for each tema and individuals]
+
+### Problems / Challenges
+- 
+- 
+
+### Solutions / Actions Taken
+- 
+- 
+
+### Evidence
+- [Added code]
+- [Updated design]
+- 
+- 
+- 
+
+### Reflection
+- What went well? Everything, I didn't get any serious erros everything was good I documentate the code.
+- What needs improvement? I still need correct small mistakes.
+- What did I learn? What the vals and how to use it, it much easier than we learnied simmilar to vals method before, vals as well allows to make code more clear and readiable for me it's very good because I try to keep all my code as much as possible clear and structured because that important part of maintainability, code should be readiable to fix it if something happend, and already now this structure saved my time a few times, that alllow to find errors faster.
 ---
 
 # 7. Problems and Fixes
