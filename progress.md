@@ -192,7 +192,7 @@ Template:
 
 | Problem | Cause | Fix | Status |
 |The app put in upcoming event, the event with the earliest date(in total even if the date was 20 years ago)|It could be confusig when app will using|---|Not fixed|
-| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | - | Fixed |
+| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | Fill lops properly, before there was somewhere extra and in a right places they wasn't so I just deleted not necessarialy loops and add necessarialy | Fixed |
 | No scrollbar function in TK Inter frame | Scrollbar are not provided for this part of bibliotek | Switch from tk.frame to tk.canvas for events page | Fixed |
 
 ---
