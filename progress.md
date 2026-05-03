@@ -188,12 +188,40 @@ Template:
 - What needs improvement? Sorting by date function.
 - What did I learn? A lot, I writed above.
 ---
+## Session [06]
+**Date:** [03.05.2026-04.05.2026]  
+**Time spent:** [about 200 min]  
+**Focus:** [Now is last session, it after testing I have to fix bugs and now I fixing small bugs which was found during tests, they're not very critical but important and I fixed them, first is dates of events bug number 1, to fix it I juct added detremine todays datae and set up row which compare dates to today and if event will happend today or late only then it may put them to upcoming events it avoid using events which already happend, so it make less confusing. 
+
+Bug numebr 4 was fixed in way of changing Entry in boxes in upcomung events to Label, just a text instead of changable window, and changed insert function to config, by the way this thing I also learned now, this need to chnge something in elment after it elemtn already created, it may change tex, clor and this kind of things, in my case there was insert for Entry and now it changed to config that wass need because label daoesnt support insert function.]
+
+### Problems / Challenges
+- Learning how config works, but after 15 minutes searches I figure out how it works
+- 
+
+### Solutions / Actions Taken
+- YouTube video
+- 
+
+### Evidence
+- [Added code]
+- [App workability]
+- [Fixed bugs №1 and №4]
+- 
+- 
+
+### Reflection
+- What went well? Everything
+- What needs improvement? Maybe some add a bit more names, but I am not sure
+- What did I learn? Config 
+
 # 7. Problems and Fixes
 
 | Problem | Cause | Fix | Status |
-|The app put in upcoming event, the event with the earliest date(in total even if the date was 20 years ago)|It could be confusig when app will using|---|Not fixed|
-| UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | Fill lops properly, before there was somewhere extra and in a right places they wasn't so I just deleted not necessarialy loops and add necessarialy | Fixed |
-| No scrollbar function in TK Inter frame | Scrollbar are not provided for this part of bibliotek | Switch from tk.frame to tk.canvas for events page | Fixed |
+1. | The app put in upcoming event, the event with the earliest date(in total even if the date was 20 years ago) | It could be confusig when app will using|fixed in way of adding determine todays date and put in upcoming events events which is will happened today or late | Fixed |
+2. | UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | Fill lops properly, before there was somewhere extra and in a right places they wasn't so I just deleted not necessarialy loops and add necessarialy | Fixed |
+3. | No scrollbar function in TK Inter frame | Scrollbar are not provided for this part of bibliotek | Switch from tk.frame to tk.canvas for events page | Fixed |
+4. | Upcoming events may be changed, but shouldn't | Every one can change event on overview page, it will not be saved but it possible | Not fixed |
 
 ---
 

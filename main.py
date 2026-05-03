@@ -117,35 +117,36 @@ class TournamentApp:
         self.event1_box = tk.LabelFrame(self.events_frame, text=" Event #1 ", padx=15, pady=15)
         self.event1_box.pack(fill="x", pady=10)
 
-        tk.Label(self.event1_box, text="Event Name:").grid(row=0, column=0, sticky="w")
-        self.event1_name = tk.Entry(self.event1_box, width=45)
+        tk.Label(self.event1_box, text="Description:").grid(row=0, column=0, sticky="w")
+        self.event1_name = tk.Label(self.event1_box, width=45)
         self.event1_name.grid(row=0, column=1, padx=10, pady=5)
         
         tk.Label(self.event1_box, text="Date Time:").grid(row=1, column=0, sticky="w")
-        self.event1_date = tk.Entry(self.event1_box, width=45)
+        self.event1_date = tk.Label(self.event1_box, width=45)
         self.event1_date.grid(row=1, column=1, padx=10, pady=5)
 
         tk.Label(self.event1_box, text="Type:").grid(row=2, column=0, sticky="w")
-        self.event1_type = ttk.Combobox(self.event1_box, values=["Team", "Individual"])
+        self.event1_type = ttk.Label(self.event1_box, text="")
         self.event1_type.grid(row=2, column=1)
 
         self.event2_box = tk.LabelFrame(self.events_frame, text=" Event #2 ", padx=15, pady=15)
         self.event2_box.pack(fill="x", pady=10)
 
-        tk.Label(self.event2_box, text="Event Name:").grid(row=0, column=0, sticky="w")
-        self.event2_name = tk.Entry(self.event2_box, width=45)
+        tk.Label(self.event2_box, text="Description:").grid(row=0, column=0, sticky="w")
+        self.event2_name = tk.Label(self.event2_box, width=45)
         self.event2_name.grid(row=0, column=1, padx=10, pady=5)
         
         tk.Label(self.event2_box, text="Date Time:").grid(row=1, column=0, sticky="w")
-        self.event2_date = tk.Entry(self.event2_box, width=45)
+        self.event2_date = tk.Label(self.event2_box, width=45)
         self.event2_date.grid(row=1, column=1, padx=10, pady=5)
 
         tk.Label(self.event2_box, text="Type:").grid(row=2, column=0, sticky="w")
-        self.event2_type = ttk.Combobox(self.event2_box, values=["Team", "Individual"])
+        self.event2_type = ttk.Label(self.event2_box, text="")
         self.event2_type.grid(row=2, column=1)
 
         #determine the data andб sorting events by date and putting them in right order to overview screen
         parsed_events = []
+        today = datetime.datetime.now().date() #add determing of TODAY date
         for ev in self.data.get("events", []):
             dt = None
             for fmt in ("%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y"): 
@@ -154,19 +155,20 @@ class TournamentApp:
                     break
                 except: pass
             if not dt: dt = datetime.datetime.max #to avoid errors
-            parsed_events.append((dt, ev)) #sort events by time
+            if dt and dt.date() >= today: #avoid using events which is already happened
+                parsed_events.append((dt, ev)) #sort events by time
             
         parsed_events.sort(key=lambda x: x[0])
         upcoming = [e[1] for e in parsed_events] #put events in right order
 #put events to overview screen
         if len(upcoming) > 0:
-            self.event1_name.insert(0, upcoming[0].get("description", ""))
-            self.event1_date.insert(0, upcoming[0].get("date", ""))
-            self.event1_type.set(upcoming[0].get("type", ""))
+            self.event1_name.config(text=upcoming[0].get("description", ""))
+            self.event1_date.config(text=upcoming[0].get("date", ""))
+            self.event1_type.config(text=upcoming[0].get("type", ""))
         if len(upcoming) > 1:
-            self.event2_name.insert(0, upcoming[1].get("description", ""))
-            self.event2_date.insert(0, upcoming[1].get("date", ""))
-            self.event2_type.set(upcoming[1].get("type", ""))
+            self.event2_name.config(text=upcoming[1].get("description", ""))
+            self.event2_date.config(text=upcoming[1].get("date", ""))
+            self.event2_type.config(text=upcoming[1].get("type", ""))
 
 
     def show_event_screen(self):

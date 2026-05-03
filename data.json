@@ -1,3 +1,74 @@
 {
-    
+    "individuals": [
+        {
+            "name": "sd,jfnks",
+            "points": 0
+        },
+        {
+            "name": "sd,jfnks",
+            "points": 0
+        },
+        {
+            "name": "sd,jfnkssdfhsdjfgjs",
+            "points": 5
+        }
+    ],
+    "teams": [
+        {
+            "name": "skdhfhsdk",
+            "p1": "1",
+            "p2": "2",
+            "p3": "3",
+            "p4": "4",
+            "p5": "5",
+            "points": 0
+        },
+        {
+            "name": "skdhfhsdk",
+            "p1": "1",
+            "p2": "2",
+            "p3": "3",
+            "p4": "4",
+            "p5": "5",
+            "points": 0
+        },
+        {
+            "name": "skdhfhsdk",
+            "p1": "1",
+            "p2": "2",
+            "p3": "3",
+            "p4": "4",
+            "p5": "5",
+            "points": 0
+        },
+        {
+            "name": "skdhfhsdk",
+            "p1": "1",
+            "p2": "2",
+            "p3": "3",
+            "p4": "4",
+            "p5": "5",
+            "points": 0
+        }
+    ],
+    "events": [
+        {
+            "date": "19.06.2026",
+            "type": "Team",
+            "description": "safhbasjhvfhhadsv",
+            "participants": "sdbfhbhjasf"
+        },
+        {
+            "date": "18.06.2026",
+            "type": "Individual",
+            "description": "askbfdkjbas",
+            "participants": "ksbfdjbajk"
+        },
+        {
+            "date": "17.06.2020",
+            "type": "Team",
+            "description": "kasdfkjbs",
+            "participants": "osiahdfads"
+        }
+    ]
 }
