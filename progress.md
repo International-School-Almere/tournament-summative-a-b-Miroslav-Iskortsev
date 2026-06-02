@@ -256,35 +256,90 @@ Bug numebr 4 was fixed in way of changing Entry in boxes in upcomung events to L
 > Complete this section at the end of the project.
 
 ## What I achieved
-- really cool app, which is looks good, but there is a few things that need to be added, and 
-- 
+- Software which allow manage events, registrate participants, manage scores, create leader bord and other functions.
+- Software that meets almost all requirements and 
 - 
 
 ## What worked well
-- 
-- 
+- Self figuring out a lot of different functions.
+- Organaising code in right order
+- Bug/errors solving.
+- Testing
+- Optimization stage
+- Code documentation e.g. #
 - 
 
 ## What did not work well
-- 
+- Following user requirements, I did them but not all.
 - 
 - 
 
 ## What I would improve next time
-- 
+- Make sure that all clients requirements are done and only then start make considirations
 - 
 - 
 
 ## Final outcome
-[Describe the final result]
+[Software for manage college tournament with 3 pages which able to registr individual participants and in teams, calculate scores which putted by managers, leaderbord which formirated automatically, upcoming events that 2 events that will be happenede in a closes date to today, and ability to add and manage events.]
 
 ## Did I meet the success criteria (designspecifications)?
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
++ Means achieved in a software
+- Means not echieved in a software
++- Means partly achieved in a software
+
+1. Main purpose 
+
+1. Event management - This is the general purpose more detailed info are below. 
+
++ 2. Score calculation and mangement - The app must calculate the score. 
+
++ 3. Team members and individual participants management - The participants must be able to register themselves or by managers. 
+
+2. Users 
+
++ 1. Leadbord generation - Create a bord with leaders, it should be a bord with teams and individual participants and their place. 
+
++- 2. Organizations - That people who create the event, they must have all access for everything in the app and be able to edit everything there. 
+
++- 3. Managers - People who will entry scores, add events, add info about them, manage scores and add participants also who register them to different events, as well they also must have access to all systems in the software. 
+
+3. Input 
+
++ 1. Individual Participant details - Participant's name, id number, total score and other information which could be useful. 
+
++ 2. Team detail - Team score, name of team mebers, id of the team ID, Each team member ID. 
+
++ 3. Event information - All information about events, time, location participants and participants should be able to registrate. 
+
+- 4. Event results - Results of the event, score, time, and all results. 
+
++ 5. Score values - Who get which score add it to total. 
+
+4. Output 
+
++ 1. Teams list - Show all registered teams and their members. 
+
++ 2. Participant list - Show all individual participants in the tournament. 
+
+- 3. Event results - Shows results of each event with participant positions. 
+
+5. Functional requirements 
+
++ 4. Leader’s bord - Show ranking of teams and individual competitors based on total points. 
+
++ 1. Add teams - The software must allow organisators to add teams and registrate their members. 
+
++ 2. Add individual participants - The software must allow organisators to add individuals to participnats 
+
++ 3. Create events - The software must allow organisators to create events and define whether they are team or individual events. 
+
++- 4. Enter results - The software must allow organisators to input results of each event. 
+
++ 5. Calculate scores - The software must automatically calculate points and update the leaderboard. 
+
 
 ## Final evaluation
-[Write a short final judgment of the project]
+[Actually project are finished very good it has a potentional things to add, but overall it done and ready for use.]
 
 ---
 - 
