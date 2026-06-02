@@ -215,13 +215,39 @@ Bug numebr 4 was fixed in way of changing Entry in boxes in upcomung events to L
 - What needs improvement? Maybe some add a bit more names, but I am not sure
 - What did I learn? Config 
 
+---
+## Session [06]
+**Date:** [03.05.2026-04.05.2026]  
+**Time spent:** [30 min]  
+**Focus:** [That was quick session, because that was optimization stage, I just added labels on participants page and add data validation to avoid problems with sorting upcoming events, now this is impossible to put any letters in a event date, it could be or empty(Event with no date stated yet) or ith date in right format, if there will be putted wron format, software will show message and ask to put date in right format, as well there is error handeling added in this function in order to avoid crashes of software in case that something goes wrong.]
+
+### Problems / Challenges
+- Some errors in data validation function code
+- 
+
+### Solutions / Actions Taken
+- Self learning how to add data validation
+- 
+
+### Evidence
+- [Added code]
+- [Data validation function]
+- [Improved UX, added labels.]
+- 
+- 
+
+### Reflection
+- What went well? 
+- What needs improvement? 
+- What did I learn? 
+
 # 7. Problems and Fixes
 
 | Problem | Cause | Fix | Status |
 1. | The app put in upcoming event, the event with the earliest date(in total even if the date was 20 years ago) | It could be confusig when app will using|fixed in way of adding determine todays date and put in upcoming events events which is will happened today or late | Fixed |
 2. | UI for Leaderbord and upcoing events doesn't work | Somewhere is mistake | Fill lops properly, before there was somewhere extra and in a right places they wasn't so I just deleted not necessarialy loops and add necessarialy | Fixed |
 3. | No scrollbar function in TK Inter frame | Scrollbar are not provided for this part of bibliotek | Switch from tk.frame to tk.canvas for events page | Fixed |
-4. | Upcoming events may be changed, but shouldn't | Every one can change event on overview page, it will not be saved but it possible | Not fixed |
+4. | Upcoming events may be changed, but shouldn't | Every one can change event on overview page, it will not be saved but it possible | Fixed |
 
 ---
 
@@ -230,7 +256,7 @@ Bug numebr 4 was fixed in way of changing Entry in boxes in upcomung events to L
 > Complete this section at the end of the project.
 
 ## What I achieved
-- 
+- really cool app, which is looks good, but there is a few things that need to be added, and 
 - 
 - 
 

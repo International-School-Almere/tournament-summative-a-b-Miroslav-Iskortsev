@@ -24,7 +24,7 @@ class TournamentApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Tournament Management System")
-        self.root.geometry("1250x870")
+        self.root.geometry("1300x870")
         
         #load data when system start
         self.data = load_data()
@@ -226,12 +226,11 @@ class TournamentApp:
         entry_i = tk.Frame(indiv)
         entry_i.pack(pady=5)
 
+        tk.Label(entry_i, text="Name:").pack(side="left")
         self.indiv_name_entry = tk.Entry(entry_i)
         self.indiv_name_entry.pack(side="left", padx=5)
 
-        self.indiv_points = tk.Entry(entry_i, width=5)
-        self.indiv_points.pack(side="left")
-
+        tk.Label(entry_i, text="+Pts:").pack(side="left", padx=(5,0))
         self.indiv_add_points = tk.Entry(entry_i, width=5)
         self.indiv_add_points.pack(side="left")
         #buttons for add points andd add particip
@@ -259,18 +258,23 @@ class TournamentApp:
         entry_t = tk.Frame(team)
         entry_t.pack(pady=5)
 
+        tk.Label(entry_t, text="Team:").pack(side="left")
         self.team_name_entry = tk.Entry(entry_t, width=8)
         self.team_name_entry.pack(side="left")
         #boxes for team participants in adding
+        tk.Label(entry_t, text="P1:").pack(side="left")
         self.p1 = tk.Entry(entry_t, width=6); self.p1.pack(side="left")
+        tk.Label(entry_t, text="P2:").pack(side="left")
         self.p2 = tk.Entry(entry_t, width=6); self.p2.pack(side="left")
+        tk.Label(entry_t, text="P3:").pack(side="left")
         self.p3 = tk.Entry(entry_t, width=6); self.p3.pack(side="left")
+        tk.Label(entry_t, text="P4:").pack(side="left")
         self.p4 = tk.Entry(entry_t, width=6); self.p4.pack(side="left")
+        tk.Label(entry_t, text="P5:").pack(side="left")
         self.p5 = tk.Entry(entry_t, width=6); self.p5.pack(side="left")
 
-        self.team_points = tk.Entry(entry_t, width=5)
-        self.team_points.pack(side="left")
 
+        tk.Label(entry_t, text="+Pts:").pack(side="left", padx=(5,0))
         self.team_add_points = tk.Entry(entry_t, width=5)
         self.team_add_points.pack(side="left")
 #add points or add team button
@@ -416,9 +420,22 @@ class TournamentApp:
         for box in self.scroll_frame.winfo_children():
             if isinstance(box, tk.LabelFrame) and hasattr(box, 'widgets'):
                 d, t, desc, p = box.widgets
+                date_val = d.get().strip()  #call data validation
+                if date_val and not self.validate_date(date_val):return
                 self.data["events"].append({"date": d.get(), "type": t.get(), "description": desc.get(), "participants": p.get()})
         save_data(self.data)
         messagebox.showinfo("Saved", "Events updated")
+
+    #Data validation in orders to avoid risk that in data will be putten letters.
+    def validate_date(self, date_str):
+        for fmt in ("%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y"):
+            try:
+                datetime.datetime.strptime(date_str.strip(), fmt)
+                return True
+            except ValueError:
+                pass
+        messagebox.showerror("Error", "Invalid date format. Use DD.MM.YYYY")
+        return False
 
     #deleating last in list event box with confirmation
     def delete_event_box(self):
