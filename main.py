@@ -307,7 +307,7 @@ class TournamentApp:
 #Add individuals
     def add_individual(self):
         name = self.indiv_name_entry.get()
-        points = self.indiv_points.get() or 0
+        points = self.indiv_add_points.get() or 0
         if name:
             count = len(self.indiv_tree.get_children()) + 1
             self.indiv_tree.insert("", "end", values=(count, name, points))
@@ -318,7 +318,7 @@ class TournamentApp:
         team = self.team_name_entry.get()
         if team:
             count = len(self.team_tree.get_children()) + 1
-            self.team_tree.insert("", "end", values=(count, team, self.p1.get(), self.p2.get(), self.p3.get(), self.p4.get(), self.p5.get(), self.team_points.get() or 0))
+            self.team_tree.insert("", "end", values=(count, team, self.p1.get(), self.p2.get(), self.p3.get(), self.p4.get(), self.p5.get(), self.team_add_points.get() or 0))
             self.save_participants_state()
 
     #adding points for indiv particip
@@ -348,7 +348,7 @@ class TournamentApp:
         sel = self.indiv_tree.selection()
         if sel:
             name = self.indiv_name_entry.get()
-            points = self.indiv_points.get()
+            points = self.indiv_add_points.get()
             item = self.indiv_tree.item(sel)
             vals = list(item["values"])
             if name: vals[1] = name
@@ -368,7 +368,7 @@ class TournamentApp:
             vals[4] = self.p3.get() or vals[4]
             vals[5] = self.p4.get() or vals[5]
             vals[6] = self.p5.get() or vals[6]
-            if self.team_points.get(): vals[7] = self.team_points.get()
+            if self.team_add_points.get(): vals[7] = self.team_add_points.get()
             self.team_tree.item(sel, values=vals)
             self.save_participants_state()
 
